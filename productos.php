@@ -1,47 +1,21 @@
-<?php require_once "config/conexion.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Carrito de Compras</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" /> -->
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/estilos.css" rel="stylesheet" />
     <link href="assets/css/estilo.css" rel="stylesheet" />
     <link href="assets/css/cards.css" rel="stylesheet" />
     <link href="assets/css/prueba.css" rel="stylesheet" />
     <link href="assets/css/mano.css" rel="stylesheet" />
-
+    <title>Productos</title>
 </head>
-
 <body>
-    <a href="#" class="btn-flotante" id="btnCarrito">Carrito <span class="badge bg-success" id="carrito">0</span></a>
-    <!-- Navigation-->
-    <?php include "header.php" ?>
-    <!-- Header-->
-    <!-- <header class="bg-dark py-3">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Tienda Online</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Lorem ipsum dolor sit amet.</p>
-            </div>
-        </div>
-    </header> -->
-
-    <section class="py-1">
-        <?php 
-        include "slide.php";
-        include "descuento.php";
-        include "card.php";
-        
-        ?>
+<?php 
+include "./config/conexion.php";
+include "header.php"?>
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 <?php
@@ -86,25 +60,5 @@
             </div>
              
         </div>
-        <?php 
-        include "intro.php";
-        include "mayot.php";
-        include "mano.php";
-        ?>
-    </section>
-    <!-- Footer-->
-    <?php  include "footer.php"?>
-    <footer class="py-2 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; mi primera puntada 2022</p>
-        </div>
-    </footer>
-    
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
 </body>
-
 </html>

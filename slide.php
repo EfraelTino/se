@@ -23,14 +23,14 @@
   </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Second slide">
+      <img class="d-block w-100" src="https://cdn.shopify.com/s/files/1/1882/5209/files/Tejido_a_la_cintura_d538f7e6-9d82-47cc-bbac-e000fa6b26f6_large.jpg" alt="Second slide">
       <div class="carousel-caption d-none d-md-block">
     <h5>...</h5>
     <p>...</p>
   </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Third slide">
+      <img class="d-block w-100" src="http://blog.redbus.pe/wp-content/uploads/2022/08/Plaza-de-Armas-Huanta.jpg" alt="Third slide">
       <div class="carousel-caption d-none d-md-block">
     <h5>...</h5>
     <p>...</p>
