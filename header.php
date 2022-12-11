@@ -35,6 +35,7 @@
                     <ul class="navbar-nav"><a href="nosotros.php" class="nav-link text-info" category="all">Nosotros</a></ul>
                     
                 </div>
+                
             </div>
         </nav>
     </div>

@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="cardContainer">
+    <div class="cardContainer container">
         <div class="cardRecomend">
             <div class="principal">
                 <div class="title">
