@@ -1,8 +1,16 @@
 <link href="assets/css/estilo.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <div class="Intro">
     <div class="Intro__desc">
-        <h2 class="title_productos text-center ">Nuestros productos más exclusivos</h2>
-        <p class="lead pt-5 text-justify fs-5 text fw-lighter"><strong>Exclusividad, tradición y compromiso en cada puntada.
+        <h2 class="title_productos text-center carrios ">Nuestros productos más exclusivos</h2>
+        <style>
+            .s{
+                font-weight: 200;
+                line-height: 1.25rem;
+                font-size: 1rem;
+            }
+        </style>
+        <p class="container lead pt-5 text-justify fs-6 text fw-lighter font-dm-sans s"><strong>Exclusividad, tradición y compromiso en cada puntada.
                 Nuestra selección de las fibras más finas y exclusivas de los Andes
                 son un referente de sostenibilidad, calidad y lujo;
                 atributos que finamente tejemos en nuestras más icónicas y lujosas líneas.

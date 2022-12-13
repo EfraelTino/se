@@ -69,7 +69,22 @@
 *::after {
   box-sizing: border-box;
 }
+.carrios{
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-weight: 800;
+}
+.font-dm-sans {
+  font-family: 'Raleway', sans-serif;
+}
+.mamnos{
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 1;
 
+}
+.desc {
+  font-weight: 250;
+}
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;

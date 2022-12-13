@@ -1,4 +1,5 @@
 <?php
+
 include "config/conexion.php";
 $id_producto = $_GET['id'];
 function buscarProductoById($conexion, $id)
@@ -9,6 +10,7 @@ function buscarProductoById($conexion, $id)
 $busc_producto = buscarProductoById($conexion, $id_producto);
 $res_b_producto = mysqli_fetch_array($busc_producto);
 ?>
+<?php require_once "config/conexion.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +20,9 @@ $res_b_producto = mysqli_fetch_array($busc_producto);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del producto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet" />
     <link href="assets/css/estilos.css" rel="stylesheet" />
     <link href="assets/css/estilo.css" rel="stylesheet" />
@@ -43,9 +48,9 @@ $res_b_producto = mysqli_fetch_array($busc_producto);
                             <a href="#" class="nav-link" category="<?php echo $data['categoria']; ?>"><?php echo $data['categoria']; ?></a>
                         <?php } ?>
                     </ul> -->
-                    <ul class="navbar-nav"><a href="index.php" class="nav-link text-black hover-overlay font-weight-light" category="all">Inicio</a></ul>
-                    <ul class="navbar-nav"><a href="productos.php" class="nav-link text-black hover-overlay font-weight-light" category="all">Productos</a></ul>
-                    <ul class="navbar-nav"><a href="nosotros.php" class="nav-link text-black hover-overlay font-weight-light" category="all">Nosotros</a></ul>
+                    <ul class="navbar-nav"><a href="index.php" class="nav-link text-black hover-overlay font-weight-light font-dm-sans active font-dm-sans" category="all" style="font-weight: 300;">Inicio</a></ul>
+                    <ul class="navbar-nav"><a href="productos.php" class="nav-link text-black hover-overlay font-weight-light font-dm-sans active font-dm-sans" category="all" style="font-weight: 300;">Productos</a></ul>
+                    <ul class="navbar-nav"><a href="nosotros.php" class="nav-link text-black hover-overlay font-weight-light font-dm-sans active font-dm-sans" category="all" style="font-weight: 300;">Nosotros</a></ul>
 
                 </div>
                 <a href="#" class="btn-flotante py-1" id="btnCarrito"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
@@ -54,28 +59,39 @@ $res_b_producto = mysqli_fetch_array($busc_producto);
             </div>
         </nav>
     </div>
-    <div style="margin-top: 100px;" class="border-dark">
-        <div class="container mb-3">
-            <div class=" text-center mt-5  ">
-                <div class="">
-                    <h1>Detalles del producto</h1>
+    <div>
+        <div class="container mb-3" style="margin-top: 100px;">
+            <div class="text-center mt-5">
+                <div class="py-3">
+                    <h1 class="carrios">Detalles del producto</h1>
                 </div>
-                <div class="row-cols-1 row-cols-sm-2  row-cols-md-2">
-                    <div class="col">
-                        <img src="assets/img/<?php echo $res_b_producto['imagen']; ?>" alt="<?php echo $res_b_producto['nombre'] ?>" />
+                <style>
+                    @media (min-width: 640px) {
+
+                        .cns {
+                            display: grid;
+                            grid-template:
+                                repeat(1, 1fr) /repeat(2, 1fr);
+                            gap: var(--sm);
+                        }
+                    }
+                </style>
+                <div class="cns">
+                    <div class="col card">
+                        <img src="assets/img/<?php echo $res_b_producto['imagen']; ?>" alt="<?php echo $res_b_producto['nombre'] ?>">
                     </div>
                     <div class="col">
                         <div class="card-header">
-                            <h2> <?php echo $res_b_producto['nombre'] ?> </h2>
+                            <h2 class="font-dm-sans "> <?php echo $res_b_producto['nombre'] ?> </h2>
                         </div>
                         <div class="text-center list-group-item">
-                            <p>Descripción: <strong><?php echo $res_b_producto['descripcion'] ?></strong></p>
+                            <p class="font-dm-sans "><strong>Descripción: </strong><?php echo $res_b_producto['descripcion'] ?></p>
                         </div>
                         <div class="text-center list-group-item">
-                            <p>Precio por oferta: <?php echo $res_b_producto['precio_normal'] ?> <strong><?php echo $res_b_producto['precio_rebajado'] ?></strong></p>
+                            <p class="font-dm-sans "><strong>Precio por oferta: </strong>S/. <?php echo $res_b_producto['precio_rebajado'] ?></p>
                         </div>
                         <div class="text-center list-group-item">
-                            <p>Cantidad: <strong><?php echo $res_b_producto['cantidad'] ?></strong></p>
+                            <p class="font-dm-sans "><strong>Cantidad: </strong><?php echo $res_b_producto['cantidad'] ?></p>
                         </div>
                         <div class="text-center list-group-item">
 
@@ -88,13 +104,16 @@ $res_b_producto = mysqli_fetch_array($busc_producto);
                             $b_cat = buscarCategoriaById($conexion, $res_b_producto['id_categoria']);
                             $res_b_cat = mysqli_fetch_array($b_cat);
                             ?>
-                            <p>Categoría: <strong><?php echo $res_b_cat['categoria'] ?></strong></p>
+                            <p class="font-dm-sans "><strong>Categoría: </strong><?php echo $res_b_cat['categoria'] ?></p>
                         </div>
-                        <div class="text-center list-group-item"><a class="btn btn-outline-dark mt-auto agregar" data-id="<?php echo $data['id']; ?>" href="#">Agregar al carrito</a></div>
+                        <div class="text-center list-group-item">
+                        <p class="text-center font-dm-sans">
+                                            <strong>Talla: </strong>
+                                        <span><?php echo $res_b_producto['talla'] ?></span>
+                        </div>
+                        <div class="text-center list-group-item"><a class="btn btn-outline-dark mt-auto agregar font-dm-sans " data-id="<?php echo $res_b_producto['id']; ?>" href="#"> <strong> Agregar al carrito</strong></a></div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>

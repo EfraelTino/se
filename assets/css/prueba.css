@@ -21,8 +21,22 @@
     --padding-lg: 2.5rem 3rem;
     --padding-xs: 3.5rem 8rem;
     --padding-ut: 5rem 12rem;
-    --fleur: "Raleway", sans-serif;
-    --new: "Lato", sans-serif;
+}
+.carrios{
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-weight: 800;
+}
+.font-dm-sans {
+    font-family: 'Raleway', sans-serif;
+}
+.mamnos{
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1;
+
+}
+.desc {
+    font-weight: 250;
 }
 .cards {
     padding: .8rem 1rem;

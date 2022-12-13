@@ -1,7 +1,24 @@
+.carrios{
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-weight: 800;
+}
+
+.font-dm-sans {
+    font-family: 'Raleway', sans-serif;
+}
 .andes {
     font-family: var(--fleur);
     color: var(--white);
     box-sizing: border-box;
+}
+.mamnos{
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1;
+
+}
+.desc {
+    font-weight: 250;
 }
 
 .andes__mano {
@@ -46,6 +63,7 @@
         gap: var(--sm);
     }
 }
+
 
 @media (min-width: 900px) {
     .andes__calidad, .andes__mano{
