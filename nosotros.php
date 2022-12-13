@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -90,7 +91,7 @@
 
             </div>
             <div class="col">
-                <img src="./assets/img/ninia.webp" alt="logo" class="w-100">
+                <img src="./assets/img/ninia.jpg" alt="logo" class="w-100">
                 <h3 class="text-center carrios py-3">Fundación Mi primera puntada</h3>
                 <p class="text-justify font-dm-sans" style="text-align: justify;">Tenemos el objetivo de crear nuestra fundación Mi primera puntada, continuamos con la misión de apoyar a más mujeres y niños en su camino de desarrollo.</p>
 

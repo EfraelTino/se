@@ -11,7 +11,7 @@ require_once "config/config.php";
     <meta name="author" content="" />
     <title>Carrito de Compras</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" /> -->
@@ -100,7 +100,7 @@ require_once "config/config.php";
                         </style>
                         <div class="pp">
                             <div class="col-md-12 ms-auto pay py-3 font-dm-sans">
-                                <h4 class="font-dm-sans">Total a Pagar: S/.<span id="total_pagar"> 0.00</span></h4>
+                                <h4 class="font-dm-sans">Total a Pagar: S/.<span id="total_pagar"> 0.00</span>.00</h4>
                                 <div class="d-grid gap-2">
                                     <div id="paypal-button-container"></div>
 
@@ -222,25 +222,25 @@ require_once "config/config.php";
                             <div class="text-center list-group-item border-danger bg-white p-0">
                                 <img src="./assets/icon/bn.svg" alt="bn">
                                 <h4 class="m-0 p-0 font-weight-normal font-dm-sans">Número de cuenta:</h4>
-                                <p class="m-0 p-0 font-dm-sans">4422-5645-2345-1234</p>
+                                <p class="m-0 p-0 font-dm-sans">04-774-171210</p>
                             </div>
                             <div class="py-1"></div>
                             <div class="text-center list-group-item border-primary p-0">
                                 <img src="./assets/icon/bcp.svg" alt="bcp">
                                 <h4 class="m-0 p-0 font-weight-normal font-dm-sans">Número de cuenta:</h4>
-                                <p class="m-0 p-0 font-dm-sans">4422-5645-2345-1234</p>
+                                <p class="m-0 p-0 font-dm-sans">194-46576879-0-08</p>
                             </div>
                             <div class="py-1"></div>
                             <div class="text-center list-group-item border-success p-0">
                                 <img src="./assets/icon/ib.svg" alt="interbank">
                                 <h4 class="m-0 p-0 font-weight-normal font-dm-sans">Número de cuenta:</h4>
-                                <p class="m-0 p-0 font-dm-sans">4422-5645-2345-1234</p>
+                                <p class="m-0 p-0 font-dm-sans">003-200-013071734906-37</p>
                             </div>
                             <div class="py-1"></div>
                             <div class="text-center list-group-item border-primary p-0">
                                 <img src="./assets/icon/bbva.svg" alt="bcp">
                                 <h4 class="m-0 p-0 font-weight-normal font-dm-sans">Número de cuenta:</h4>
-                                <p class="m-0 p-0 font-dm-sans">4422-5645-2345-1234</p>
+                                <p class="m-0 p-0 font-dm-sans">0011-0814-0207578008-16</p>
                             </div>
                             <div class="py-1"></div>
                             <style>
@@ -251,13 +251,13 @@ require_once "config/config.php";
                             <div class="text-center list-group-item yape p-0">
                                 <img src="./assets/icon/yape.svg" alt="bcp">
                                 <h4 class="m-0 p-0 font-weight-normal font-dm-sans">Número de cuenta:</h4>
-                                <p class="m-0 p-0 font-dm-sans">4422-5645-2345-1234</p>
+                                <p class="m-0 p-0 font-dm-sans">+51 915 068 001</p>
                             </div>
                             <div class="py-1"></div>
                             <div class="text-center list-group-item border-info p-0">
                                 <img src="./assets/icon/plin.svg" alt="bcp">
                                 <h4 class="m-0 p-0 font-weight-normal font-dm-sans">Número de cuenta:</h4>
-                                <p class="m-0 p-0 font-dm-sans">4422-5645-2345-1234</p>
+                                <p class="m-0 p-0 font-dm-sans">+51 915 068 001</p>
                             </div>
                             <div class="py-1"></div>
                         </div>

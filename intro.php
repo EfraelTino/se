@@ -26,10 +26,11 @@
     <div class="container">
         <div class="row justify-content-md-center">
         <div class="col col-sm-6">
-            <img src="https://solalpaca.pe/wp-content/uploads/2022/06/sol-alpaca_super-bay.jpg" alt="modelo_uno">
+        <img src="./assets/img/mama.jpg" alt="modelo_uno">
+            
         </div>
         <div class="col col-sm-6">
-            <img src="https://solalpaca.pe/wp-content/uploads/2022/06/sol-alpaca_tributo.jpg" alt="modelo_uno">
+        <img src="./assets/img/max.jpg" alt="modelo_uno">
         </div>
         </div>
         

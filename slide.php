@@ -85,7 +85,7 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="./assets/img/slide3.jpg" alt="First slide">
+        <img class="d-block w-100" src="./assets/img/sl1.jpg" alt="First slide">
         <div class="carousel-caption ">
 
           <h5 class="ts">Mi primera puntada</h5>
@@ -93,14 +93,14 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="./assets/img/slide3.jpg" alt="Second slide">
+        <img class="d-block w-100" src="./assets/img/sl2.jpg" alt="Second slide">
         <div class="carousel-caption ">
           <h5 class=" ts my-2">Plasmando Arte</h5>
           <p class="font-dm-sans dssd py-0 my-1">Hecho con las mejores manos</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="./assets/img/plaza.jpg" alt="Third slide">
+        <img class="d-block w-100" src="./assets/img/sl3.jpg" alt="Third slide">
         <div class="carousel-caption ">
           <h5 class=" ts ">Bella Esmeralda de los Andes</h5>
           <p class="font-dm-sans dssd py-0 my-1">Producido por tejedoras en la bella esmeralda de los andes</p>
